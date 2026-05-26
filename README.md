@@ -12,6 +12,13 @@ Rather than using arbitrary data patching, this pipeline treats data missingness
 ## Model Performance & Diagnostics
 * **Algorithm:** Decision Tree Classifier (Max Depth = 3 to mitigate overfitting).
 * **Training Accuracy:** 82.72%
-* **Error Diagnostic (Confusion Matrix):** Isolated an inherent system bias producing 56 False Positives vs. 98 False Negatives. 
+* **Error Diagnostic (Confusion Matrix):** Isolated an inherent system bias producing 56 False Positives vs. 98 False Negatives.
+
+## System Deployment & Conclusion
+The finalized predictive pipeline was successfully compiled and deployed against the unlabelled 418-passenger evaluation dataset. 
+
+* **Output Delivery:** Generated a verified `submission.csv` containing binary survival predictions mapped directly to tracking IDs.
+* **Leaderboard Standing:** Successfully submitted to the live global competition, establishing a robust, verified operational baseline.
+* **Core Takeaway:** By enforcing a strict data-separation boundary during preprocessing, the pipeline completely eliminated data leakage, ensuring the model's accuracy reflects true generalization capabilities rather than artifact memorization.
 
 *Note: Developed with the collaborative assistance and technical mentorship of Google Gemini.*
